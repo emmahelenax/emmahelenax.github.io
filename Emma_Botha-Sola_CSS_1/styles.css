@@ -1,0 +1,250 @@
+
+/* This is the default section */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* This is the selectors section */
+
+/* Type Selectors */
+
+h1 {
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+header {
+    background-color: green;
+    border: 1px solid black;
+    padding: 20px;
+     padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+aside {
+    text-align: center;
+    margin: 20px auto;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: green;
+}
+
+form {
+    background-color: gainsboro;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+}
+
+nav {
+    text-align: center;
+    margin: 15px 0;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: gainsboro;
+    padding: 10px 0;
+}
+
+/* This is a section regarding class selectors */
+
+.form-section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    width: 80%;
+}
+
+/* This is a section regarding ID selectors */
+#main-title {
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* This is a section regarding multiple class selectors */
+.green.bold {
+    color: green;
+    font-weight: bold;
+}
+
+/* This is a section regarding attribute selectors */
+
+input[type="text"] {
+    border: 1px solid black;
+    margin: 1px 5px 1px 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+input[type="password"] {
+    border: 1px solid black;
+    margin: 1px 5px 1px 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+img[alt*='House of Elves picture'] {
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+embed {
+  border: 1px solid gainsboro;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* This is a next section about descendant combinators */
+
+.form-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+section .main-list {
+    list-style-type: square;
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.main-list li {
+    margin-left: 20px;
+    color: green;
+    padding: 5px 0;
+}
+
+/* This is a section regarding multiple selectors */
+
+h1, h2, .menu {
+    color: green;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* This is a section regarding chaining */
+
+h1.title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* This is a section pseudo-classes */
+
+.elf-picture:hover {
+    opacity: 0.7;
+    transform: scale(1.4);
+    transition: all 0.3s ease;
+}
+
+.elf-picture:active {
+    transform: scale(10%);
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+  text-decoration: underline;
+}
+
+input:focus {
+    border-color: gainsboro;
+    outline: none;
+    background-color: white;
+}
+
+input:disabled {
+    background-color: gainsboro;
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: gainsboro;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+/* This is a section regarding visual rules */
+
+body {
+    background-color: white;
+    color: black;
+    opacity: 0.98;
+    background-image: none !important;
+    background-image: url('https://images.unsplash.com/photo-1542601098-8fc114e148e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+/* This is a section regarding the box model */
+
+textarea {
+    width: 100%;
+    min-width: 100px;
+    min-height: 150px;
+    max-height: 200px;
+    padding: 10px;
+    border: solid black;
+    border-radius: 4px;
+    overflow: auto;
+    background-color: white;
+}
+
+#quote {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.hidden-photo {
+visibility: hidden;
+}
