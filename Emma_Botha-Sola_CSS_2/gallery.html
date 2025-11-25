@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial=scale=1.0">
+    <title>Art Gallery - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 id="main-title" class="title">Art Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Places on this Earth</h2>
+        <div class="gallery">
+
+            <figure class="artwork relative">
+                <img src="Images/Pic_1.jpg" alt="pic1" class="art-img">
+                <figcaption>Picture 1</figcaption>
+            </figure>
+
+             <figure class="artwork absolute">
+                <img src="Images/Pic_2.jpg" alt="pic2" class="art-img">
+                <figcaption>Picture 2</figcaption>
+            </figure>
+
+            <figure class="artwork sticky">
+                <img src="Images/Pic3.jpg" alt="pic2" class="art-img">
+                <figcaption>Picture 3</figcaption>
+            </figure>
+
+            <figure class="artwork static">
+                <img src="Images/Pic4.jpg" alt="pic4" class="art-img">
+                <figcaption>Picture 4</figcaption>
+            </figure>
+
+         <!--Picture 5 (iframe)-->
+         <figure class="artwork i-frame-box">
+            <iframe src="Images/Pic5.jpg" title="pic5" class="art-iframe"></iframe>
+            <figcaption>Picture 5</figcaption>
+         </figure> 
+
+        </div>
+
+        <!--Z-index stack inline-block-->
+
+        <div class="z-stack-inline">
+            <figure class="z-box z-n1">
+                <img src="Images/Pic6.jpg" alt="pic6" class="art-img">
+                <figcaption>Picture 6</figcaption>
+            </figure>
+            <figure class="z-box z-0">
+                <img src="Images/Pic7.jpg" alt="pic7" class="art-img">
+                <figcaption>Picture 7</figcaption>
+            </figure>
+            <figure class="z-box z-1">
+                <img src="Images/Pic8.jpg" alt="pic8" class="art-img">
+                <figcaption>Picture 8</figcaption>
+            </figure>
+            <figure class="z-box z-2">
+                <img src="Images/Pic9.jpg" alt="pic9" class="art-img">
+                <figcaption>Picture 9</figcaption>
+            </figure>
+            <figure class="z-box z-3">
+                <img src="Images/Pic10.jpg" alt="pic10" class="art-img">
+                <figcaption>Picture 10</figcaption>
+            </figure>
+        </div>
+
+        <!--Hidden Image-->
+
+            <figure class="artwork hidden-player">
+                <img src="Images/Pic11.jpg" alt="pic11" class="art-img">
+                <figcaption>Picture 11</figcaption>
+            </figure>    
+       
+
+        <div class="floating-box">
+            <p>Which picture was your favourite? <strong>They are all beautiful!</strong></p>
+        </div>  
+        <div class="clear-box">
+            <p>Emerging favourite: the beach</p>
+        </div>  
+    </main>
+
+    <footer class="fixed-footer">
+        <p>Art Gallery - Beautiful Places on this Earth</p>
+    </footer>
+   
+</body>
+</html>
+
+
+
+
+
+
+

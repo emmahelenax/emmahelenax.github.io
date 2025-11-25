@@ -1,0 +1,253 @@
+/* Reset Defaults */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography Section */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: #F2E7DD;
+    background-repeat: repeat;
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+h1.title {
+    font-family: "Meie Script",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    word-spacing: 2px;
+    margin: 15px 0;
+    color: #ca8e82;
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.highlight.bold {
+    color: RGB(202,142,130);
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Navigation Bar */
+
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    color: hsl(165,11%,53%);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    }
+
+nav a:hover {
+    color: #bae0da;
+}
+
+nav a:visited {
+    color: #bae0da;
+}
+
+nav a:active {
+    color: #bae0da;
+}
+
+/* Quote Section */
+
+.quote {
+    background-color: #f2d6ce;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 450px;
+    text-align: center;
+    border-radius: 8px;
+    opacity: 0.95;
+    letter-spacing: 2px; 
+}
+
+/* Sidenote Section */
+
+.sidenote {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    color: #ca8e82;
+}
+
+/* Gallery Section */
+
+.gallery {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    min-width: 300px;
+    max-width: 1000px;
+    position: relative;
+}
+
+.gallery figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Positioning Examples */
+
+.artwork.static { position: static; }
+.artwork.relative { position: relative; top: 10px; left: -100px; }
+.artwork.absolute { position: absolute; top: 20px; right: 20px; z-index: 2; }
+.artwork.sticky { position: sticky; top: 200px; z-index: 1; }
+
+/* I-Frame */
+
+.i-frame-box {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    height: 280px;
+    width: 420px;
+}
+
+.art-iframe {
+    width: 400px;
+    height: 280px;
+    border: 3px solid;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background: #7a958f;
+    border-top: 2px solid black;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #7a958f;
+    color: #F2E7DD; 
+    text-align: center;
+    padding: 10px;
+}
+
+/* Floating Box */
+
+.floating-box {
+    float: left;
+    width: 240px;
+    background-color: #ca8e82;
+    color: #F2E7DD;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    float: none;
+}
+
+/* Clear Box */
+
+.clear-box {
+    clear: both;
+    background-color: #7a958f;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 6px;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Images */
+
+.art-img {
+    width: 200px;
+    height: auto;
+    border: 3px solid;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Attribute Selector Example */
+img[alt*="pic1"] {
+    border: 3px solid #ca8e82;
+}
+
+/* Visibility */
+
+.hidden-player {
+    visibility: hidden;
+}
+
+/* Z-index inline-block stack with shadow */
+.z-stack-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.z-box {
+    display: inline-block;
+    margin-left: -100px;
+    position: relative;
+    text-align: center;
+}
+
+.z-box:first-child {margin-left: 0;}
+
+.z-n1 {z-index: -1;}
+.z-0 {z-index: 0;}
+.z-1 {z-index: 1;}
+.z-2 {z-index: 2;}
+.z-3 {z-index: 3;}
+
+.z-box img {
+    width: 200px;
+    border: 3px solid;
+    border-radius: 8px;
+    display: block;
+    margin-top: 125px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.z-box img:hover {
+    transform: scale(1.05);
+}
+
+.z-box figcaption {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #7a958f;
+    text-align: center;
+}
+
