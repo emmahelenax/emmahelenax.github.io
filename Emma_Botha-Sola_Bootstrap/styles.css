@@ -1,0 +1,113 @@
+/* Custom header color */
+
+    .navbar-custom {
+      background-color: #ca8e82; 
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #fff;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #f2d6ce; 
+    }
+    
+    h1 {
+        color: #ca8e82;
+    }
+    
+/* Buttons */
+
+    .btn-hire {
+        background-color: #ca8e82; 
+        color: #fff;
+        border: none;
+}
+    .btn-hire:hover {
+        background-color: #f2d6ce; 
+        color: #fff; 
+}
+
+    .btn-meeting {
+        background-color: #ca8e82;
+        color: #fff;
+        border: none;
+}
+    .btn-meeting:hover {
+        background-color: #f2d6ce; 
+        color: #fff;
+}
+
+/* Carousel */
+
+    .carousel-item img {
+        height: 600px;      
+    object-fit: contain;
+}
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #f2d6ce;
+        color: #ca8e82;
+}
+
+    h2 {
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 30px;
+}
+
+    #skills {
+        margin-bottom: 50px;
+}
+
+/* Accordion */
+
+    .accordion-button {
+        background-color: #ca8e82;
+        border: #f2d6ce;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .accordion-button:not(.collapsed) {
+    background-color: #ca8e82;
+    color: #fff;
+}
+
+    .accordion-button:focus {
+        border-color: transparent;
+        box-shadow: none;
+}
+    .accordion {
+        margin-bottom: 50px;
+    }
+
+/* Contact form */
+
+    #submit-button {
+        background-color: #ca8e82;
+        border: #ca8e82;
+    }
+
+
+/* Footer */
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 15px;
+        background: #ca8e82;
+        border: 1px solid #ca8e82;
+        color: #fff;
+}
+
+    .fixed-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #ca8e82;
+        color: #fff; 
+        text-align: center;
+        padding: 10px;
+}
